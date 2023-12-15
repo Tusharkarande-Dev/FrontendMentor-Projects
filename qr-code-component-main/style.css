@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville&family=Lobster&family=McLaren&family=Outfit:wght@400;700&family=Roboto+Slab:wght@400;500&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-bg {
+  width: 320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.qr-code {
+  width: 280px;
+  height: 430px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.qr-img img {
+  width: 250px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.qr-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.qr-text h3 {
+  font-size: 20px;
+}
+
+.qr-text p {
+  padding: 12px;
+  font-size: 14px;
+  color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  text-wrap: wrap;
+  position: absolute;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 375px) {
+  .qr-code-bg {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .attribution {
+    font-size: 15px;
+  }
+}
